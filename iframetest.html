@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>iframe test</title>
+	<script type="text/javascript" src="http://www.flavorlab.com/wp-includes/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="http://www.flavorlab.com/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+	
+	<script>
+	
+	jQuery(document).ready(function($) {
+	
+		//$('#iframeContainer').children('iframe').attr('src','https://player.vimeo.com/video/163593384');
+		$('#iframeContainer').children('iframe').attr('src','http://www.flavorlab.com/wp-content/themes/flavorlab/iframetest.html');
+		$('#iframeContainer').children('iframe').contents().find('body').append('<div></div>');
+		$('#iframeContainer').children('iframe').contents().find('img').css('width','100%');
+		
+	});
+	
+	jQuery(document).ready(function($) {
+    //var html = "<div>Hello from iframe</div>"; // HTML code
+    //var content = $("#yeeFrame").contents().find("body"); // iframe id is 'preview'
+
+    //content.html(html);
+
+    var csVal = "body { background: red; } div { display:inline-block; padding: 0; margin: 0;} img { width:100%;}";
+    var cssLink = "<style>" + csVal + "</style>"; // cssVal contains css code
+    var head = $("#yeeFrame").contents().find("head");
+    head.append(cssLink);
+
+});
+	
+	</script>
+	
+</head>
+<body style="background-color:#e3e3e3;">
+
+<h3>Hello!</h3>
+
+<div id="iframeContainer"><iframe id="yeeFrame"></iframe></div>
+
+</body>
+</html>
