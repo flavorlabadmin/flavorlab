@@ -119,6 +119,27 @@
                   </ul>
                 </div>
               </div>
+              
+              <!-- Testimonials -->
+              <?php $page_id = 6869; $page_data = get_page( $page_id ); ?>
+              <div class="section" id="testimonials">
+                <div class="sectionInner">
+                  <?php echo apply_filters('the_content', $page_data->post_content); ?>
+                <div id="testimonialSlides" class="flexslider">
+                  <div class="swipeMore">&laquo; Swipe to see more &raquo;</div>
+
+                  <ul class="slides">
+                  <?php query_posts('cat=2168'); if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <li>
+                         <div class="quote-wrapper"><div class="laurel left">v</div><?php the_content() ?><div class="laurel right">w</div></div>
+                    </li>
+                  <?php endwhile; endif; ?>
+                  </ul>
+                </div>
+                </div>
+              </div>
+
+            </main>
 
               <!-- Contact -->
               <?php $page_id = 158; $page_data = get_page( $page_id ); $image = wp_get_attachment_url( get_post_thumbnail_id($page_id)); ?>
@@ -127,8 +148,6 @@
                   <?php  echo apply_filters('the_content', $page_data->post_content); ?>
                 </div>
               </div>
-
-            </main>
 
         </div>
 

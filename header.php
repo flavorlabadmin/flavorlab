@@ -19,6 +19,10 @@
 
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon.png">
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+		
+		<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/library/fonts/laurel-wreath-webfont.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/library/fonts/laurel-wreath-webfont.woff2" as="font" type="font/woff2" crossorigin>
+		
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->

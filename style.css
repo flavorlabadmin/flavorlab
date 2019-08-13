@@ -17,6 +17,15 @@ body,dd,figure,pre{margin:0}img,legend{border:0}legend,ol,ul{padding:0}.byline,.
   Defaults
 **********************************************************************/
 
+@font-face {
+    font-family: 'laurus_nobilisregular';
+    src: url('../flavorlab/library/fonts/laurel-wreath-webfont.woff2') format('woff2'),
+         url('../flavorlab/library/fonts/laurel-wreath-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body, html { font-family: 'Lato', Helvetica, Arial, sans-serif; color: white; font-size: 12px; line-height: 18px; background: white; margin: 0; }
 a { outline: 0 !important; color: #00aeef;}
 
@@ -328,6 +337,115 @@ html[xmlns] .slides {display: block;}
 #contact a { color: #00b2f0; }
 
 /**********************************************************************
+  Testimonials
+**********************************************************************/
+
+#testimonials {
+	width: 100%;  
+	background-color: #000000; 
+    /*background: url(https://www.flavorlab.com/wp-content/uploads/2016/03/brands-bg.png) top center no-repeat;*/
+    background-size: cover; 
+	color: white; 
+	font-size: 18px; 
+	line-height: 24px; 
+	font-weight: 300;
+    margin: 0 auto;
+    border: none;
+    padding: 0 0 75px;
+}
+
+#testimonials::before {
+	height: 75px;
+}
+
+#testimonials .flexslider {
+	margin-bottom: 0px;
+}
+
+#testimonialSlides.flexslider {
+	background-color: #000000;
+	border: 0 none;
+	font-weight: 600;
+}
+
+#testimonials .flexslider .flex-control-nav {
+	display:none;
+}
+
+#testimonials .flexslider .slides > li {
+	padding-bottom: 30px;
+}
+
+#testimonials .quote-wrapper {
+	text-align: center;
+	width: 100%;
+	display:table;
+}
+
+#testimonials h1 {
+	display:none;
+}
+
+#testimonials blockquote {
+    color: #f7f7f7;
+}
+
+#testimonials p {
+    margin-left: 0px;
+    color: #f7f7f7;
+    display:none;
+}
+
+#testimonials cite {
+    margin-left: 40px;
+    color: #f7f7f7;
+}
+
+#testimonials blockquote {
+    color: #f7f7f7;
+    float: none;
+    clear: none;
+    width: 75%;
+    margin: 0px auto 18px;
+    text-align: center;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 960px) {
+	#testimonials blockquote {
+		width: 65%;
+		}
+}
+
+@media only screen and (max-width: 740px) {
+	#testimonials blockquote {
+		width: 75%;
+		}
+}
+
+#testimonials blockquote p {
+	margin-left: auto;
+	margin-right: auto;
+    display: inline-block;
+}
+
+.laurel {
+	float: none;
+	font-size: 220px;
+	color: #ffd700;
+	font-family: 'laurus_nobilisregular';
+	font-weight: normal;
+	line-height: 1;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.laurel.right {
+	float: none;
+}
+
+/**********************************************************************
   Case Study & post content
 **********************************************************************/
 
@@ -509,7 +627,7 @@ color:#5c6b80;
 #expand { font-size: 14px; line-height: 80px; width: 640px; margin: 0 auto; color: white; cursor: pointer; text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.81); }
 
 #expand h1 {
-	background: url(//www.flavorlab.com/wp-content/themes/flavorlab/library/images/arrow_down_white.png) no-repeat right 7px;
+	background: url(http://www.flavorlab.com/wp-content/themes/flavorlab/library/images/arrow_down_white.png) no-repeat right 7px;
 	padding-right: 35px;
 	display: inline-block;
 	text-transform: uppercase;
@@ -776,6 +894,14 @@ p {
 	/*#audio-movies.section { padding-bottom: 0; }*/
 	
 	/*.page-template-page-sound .catSwitchContainer { top: 0px !important;}*/
+	
+	#testimonials {
+		padding: 0;
+	}
+		
+		.laurel {
+		display:none;
+		}
 
 }
 
