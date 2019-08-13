@@ -624,7 +624,18 @@ jQuery(document).ready(function($) {
     });
   }
   
-  
+  // Testimonials slider
+
+  $('#testimonialSlides').flexslider({
+    animation: "slide",
+    animationSpeed: 400,
+    slideshowSpeed: 5000,
+    pauseOnHover: true,
+    initDelay: 0,
+    itemWidth: 960,
+    animationLoop: true,
+    touch: true
+  });
 
 }); /* end of as page load scripts */
 
