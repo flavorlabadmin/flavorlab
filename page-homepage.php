@@ -118,11 +118,11 @@
                   <?php endwhile; endif; ?>
                   </ul>
                 </div>
-              </div>
+              </div><a id="testimonials"></a>
               
               <!-- Testimonials -->
               <?php $page_id = 6869; $page_data = get_page( $page_id ); ?>
-              <div class="section" id="testimonials">
+              <div class="section" id="testimonials-section">
                 <div class="sectionInner">
                   <?php echo apply_filters('the_content', $page_data->post_content); ?>
                 <div id="testimonialSlides" class="flexslider">

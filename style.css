@@ -340,7 +340,7 @@ html[xmlns] .slides {display: block;}
   Testimonials
 **********************************************************************/
 
-#testimonials {
+#testimonials-section {
 	width: 100%;  
 	background-color: #000000; 
     /*background: url(https://www.flavorlab.com/wp-content/uploads/2016/03/brands-bg.png) top center no-repeat;*/
@@ -354,11 +354,11 @@ html[xmlns] .slides {display: block;}
     padding: 0 0 75px;
 }
 
-#testimonials::before {
+#testimonials-section::before {
 	height: 75px;
 }
 
-#testimonials .flexslider {
+#testimonials-section .flexslider {
 	margin-bottom: 0px;
 }
 
@@ -368,40 +368,44 @@ html[xmlns] .slides {display: block;}
 	font-weight: 600;
 }
 
-#testimonials .flexslider .flex-control-nav {
+#testimonials-section .swipeMore {
+	display:none !important;
+}
+
+#testimonials-section .flexslider .flex-control-nav {
 	display:none;
 }
 
-#testimonials .flexslider .slides > li {
+#testimonials-section .flexslider .slides > li {
 	padding-bottom: 30px;
 }
 
-#testimonials .quote-wrapper {
+#testimonials-section .quote-wrapper {
 	text-align: center;
 	width: 100%;
 	display:table;
 }
 
-#testimonials h1 {
+#testimonials-section h1 {
 	display:none;
 }
 
-#testimonials blockquote {
+#testimonials-section blockquote {
     color: #f7f7f7;
 }
 
-#testimonials p {
+#testimonials-section p {
     margin-left: 0px;
     color: #f7f7f7;
     display:none;
 }
 
-#testimonials cite {
+#testimonials-section cite {
     margin-left: 40px;
     color: #f7f7f7;
 }
 
-#testimonials blockquote {
+#testimonials-section blockquote {
     color: #f7f7f7;
     float: none;
     clear: none;
@@ -413,18 +417,18 @@ html[xmlns] .slides {display: block;}
 }
 
 @media only screen and (max-width: 960px) {
-	#testimonials blockquote {
+	#testimonials-section blockquote {
 		width: 65%;
 		}
 }
 
 @media only screen and (max-width: 740px) {
-	#testimonials blockquote {
+	#testimonials-section blockquote {
 		width: 75%;
 		}
 }
 
-#testimonials blockquote p {
+#testimonials-section blockquote p {
 	margin-left: auto;
 	margin-right: auto;
     display: inline-block;
@@ -895,7 +899,7 @@ p {
 	
 	/*.page-template-page-sound .catSwitchContainer { top: 0px !important;}*/
 	
-	#testimonials {
+	#testimonials-section {
 		padding: 0;
 	}
 		
