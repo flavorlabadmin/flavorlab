@@ -347,13 +347,12 @@ jQuery(document).ready(function($) {
 			 		}
    			 }
       
-      
-      $('#expand').html('<h1>' + json[0]['post_title'] + '</h1>'); //added 2017-08-01
-      
       if(json[0]['show-view-case-study-link'] == 'false'){
+      $('#expand').html('<h1 class="no-cs">' + json[0]['post_title'] + '</h1>'); //added 2017-08-01
         //$('#workExpand').children('.inner').html('<h1>' + json[0]['post_title'] + '</h1><h2>' + json[0]['date'] + ' | ' + json[0]['clientName'] + '</h2><p>' + json[0]['post_excerpt'] + '</p>'); // new formatting added below 2017-08-01
         $('#workExpand').children('.inner').html('<div class="workExpandLeft"><h1>' + json[0]['post_title'] + '</h1></div><div class="workExpandCenter"></div><div class="workExpandRight"><h2>' + json[0]['date'] + ' | ' + json[0]['clientName'] + '</h2><p>' + json[0]['post_excerpt'] + '</p></div>');
       } else {
+      $('#expand').html('<h1>' + json[0]['post_title'] + '</h1>'); //added 2017-08-01
         //$('#workExpand').children('.inner').html('<h1>' + json[0]['post_title'] + '</h1><h2>' + json[0]['date'] + ' | ' + json[0]['clientName'] + '</h2><p>' + json[0]['post_excerpt'] + '</p> <a href="' + json[0]['fullLink'] + '">VIEW FULL CASE STUDY!</a>');
         $('#workExpand').children('.inner').html('<div class="workExpandLeft"><h1>' + json[0]['post_title'] + '</h1></div><div class="workExpandCenter"></div><div class="workExpandRight"><h2>' + json[0]['date'] + ' | ' + json[0]['clientName'] + '</h2><p>' + json[0]['post_excerpt'] + '</p><a href="' + json[0]['fullLink'] + '" class="view-fcs">VIEW FULL CASE STUDY</a></div>');
          //$('#workExpand').children('.inner').html('<div class="workExpandLeft"><h1>' + json[0]['post_title'] + '</h1></div><div class="workExpandCenter"></div><div class="workExpandRight"><h2>' + json[0]['date'] + ' | ' + json[0]['clientName'] + '</h2><p class="case-study-excerpt">' + json[0]['post_excerpt'] + '</p><button class="view-fcs">VIEW FULL CASE STUDY</button><div class="case-study-content" style="display:none;">' + json[0]['post_content'] + '</div></div>');
@@ -508,15 +507,16 @@ jQuery(document).ready(function($) {
 			 		}
    			 }
           
-          $('#expand').html('<h1>' + json[0]['post_title'] + '</h1>'); //added 2017-08-01 
          // $('#workExpand').children('.inner').html('<h1>' + json[0]['post_title'] + '</h1><h2>' + json[0]['date'] + ' | ' + json[0]['clientName'] + '</h2><p>' + json[0]['post_excerpt'] + '</p><a href="' + json[0]['fullLink'] + '">VIEW FULL CASE STUDY</a>');
          //$('#workExpand').children('.inner').html('<div class="workExpandLeft"><h1>' + json[0]['post_title'] + '</h1></div><div class="workExpandCenter"></div><div class="workExpandRight"><h2>' + json[0]['date'] + ' | ' + json[0]['clientName'] + '</h2><p>' + json[0]['post_excerpt'] + '</p><a href="' + json[0]['fullLink'] + '" class="view-fcs">VIEW FULL CASE STUDY</a></div>');
          
         //added 2017-06-29 to prevent View Case Study button loading for projects without case studies
           if(json[0]['show-view-case-study-link'] == 'false'){
+           $('#expand').html('<h1 class="no-cs">' + json[0]['post_title'] + '</h1>'); //added 2017-08-01 
         //$('#workExpand').children('.inner').html('<h1>' + json[0]['post_title'] + '</h1><h2>' + json[0]['date'] + ' | ' + json[0]['clientName'] + '</h2><p>' + json[0]['post_excerpt'] + '</p>'); // new formatting added below 2017-08-01
         $('#workExpand').children('.inner').html('<div class="workExpandLeft"><h1>' + json[0]['post_title'] + '</h1></div><div class="workExpandCenter"></div><div class="workExpandRight"><h2>' + json[0]['date'] + ' | ' + json[0]['clientName'] + '</h2><p>' + json[0]['post_excerpt'] + '</p></div>');
 		  } else {
+		   $('#expand').html('<h1>' + json[0]['post_title'] + '</h1>'); //added 2017-08-01 
 			//$('#workExpand').children('.inner').html('<h1>' + json[0]['post_title'] + '</h1><h2>' + json[0]['date'] + ' | ' + json[0]['clientName'] + '</h2><p>' + json[0]['post_excerpt'] + '</p> <a href="' + json[0]['fullLink'] + '">VIEW FULL CASE STUDY!</a>');
 			$('#workExpand').children('.inner').html('<div class="workExpandLeft"><h1>' + json[0]['post_title'] + '</h1></div><div class="workExpandCenter"></div><div class="workExpandRight"><h2>' + json[0]['date'] + ' | ' + json[0]['clientName'] + '</h2><p>' + json[0]['post_excerpt'] + '</p><a href="' + json[0]['fullLink'] + '" class="view-fcs">VIEW FULL CASE STUDY</a></div>');
 			//$('#workExpand').children('.inner').html('<div class="workExpandLeft"><h1>' + json[0]['post_title'] + '</h1></div><div class="workExpandCenter"></div><div class="workExpandRight"><h2>' + json[0]['date'] + ' | ' + json[0]['clientName'] + '</h2><p class="case-study-excerpt">' + json[0]['post_excerpt'] + '</p><button class="view-fcs">VIEW FULL CASE STUDY</button><div class="case-study-content" style="display:none;">' + json[0]['post_content'] + '</div></div>');
