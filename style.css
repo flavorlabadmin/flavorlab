@@ -638,6 +638,11 @@ color:#5c6b80;
 	font-size: 2.0em;
 }
 
+#expand h1.no-cs {
+	background: none;
+	padding-right:0;
+}
+
 #expand h1 .fa-expand {
 		color: #00B2F0;
 }
