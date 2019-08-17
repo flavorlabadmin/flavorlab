@@ -414,6 +414,8 @@ html[xmlns] .slides {display: block;}
     text-align: center;
     display:table-cell;
     vertical-align: middle;
+    line-height: 1.5em;
+    font-weight: 400;
 }
 
 @media only screen and (max-width: 960px) {
@@ -437,7 +439,7 @@ html[xmlns] .slides {display: block;}
 .laurel {
 	float: none;
 	font-size: 220px;
-	color: #ffd700;
+    color: #f7f7f7;
 	font-family: 'laurus_nobilisregular';
 	font-weight: normal;
 	line-height: 1;
