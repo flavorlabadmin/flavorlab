@@ -627,9 +627,9 @@ jQuery(document).ready(function($) {
   // Testimonials slider
 
   $('#testimonialSlides').flexslider({
-    animation: "slide",
+    animation: "fade",
     animationSpeed: 400,
-    slideshowSpeed: 5000,
+    slideshowSpeed: 20000,
     pauseOnHover: true,
     initDelay: 0,
     itemWidth: 960,
