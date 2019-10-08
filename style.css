@@ -484,6 +484,9 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto}
 .postContent ol { list-style-type:  decimal; padding: 0; }
 .postContent ul { list-style-type: disc; padding: 0; }
 
+.postContent #main .oswald-heading { font-family: 'Oswald', 'Lato', arial, sans-serif !important; }
+.postContent #main .heading-clear { clear: both; }
+
 /**********************************************************************
   404
 **********************************************************************/
@@ -622,8 +625,12 @@ color:#5c6b80;
 	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.81);
 }
 
-.single-post .postContent p {
+.single-post #main {
 	width: 650px !important;
+}
+
+.single-post .postContent p {
+	width: auto !important;
 	font-size: 16px !important;
 	line-height: 20px !important;
 	margin: 12px auto;
@@ -918,7 +925,7 @@ p {
 
 @media only screen and (max-width: 650px) {
 
-	.home .sectionInner p, .single-post .postContent p {
+	.single-post #main, .home .sectionInner p, .single-post .postContent p {
 		width: 100% !important;
 	}
 
