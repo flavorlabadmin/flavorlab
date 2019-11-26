@@ -541,7 +541,9 @@ jQuery(document).ready(function($) {
 
           $.each(json, function(i, post) {
             // Thumbnails for current category
-            var thumbHtml = '<li class="cat-' + post.cat_id + ' post-' + post.post_id + '"><img src="' + post.sliderThumbnailURL + '" /></li>';
+            var psTURL = post.sliderThumbnailURL;
+            var psTURLupdated = psTURL.toString().replace(/http:/,'https:');
+            var thumbHtml = '<li class="cat-' + post.cat_id + ' post-' + post.post_id + '"><img src="' + psTURLupdated + '" /></li>';
             $('#postSelector').data('flexslider').addSlide(thumbHtml);
           });
 
@@ -636,6 +638,12 @@ jQuery(document).ready(function($) {
     animationLoop: true,
     touch: true
   });
+  
+  // revised image paths to to use SSL
+    $("img").each(function(){
+      var $this = $(this)
+      $this.attr("src",$this.attr("src").replace("http:","https:"));
+    })
 
 }); /* end of as page load scripts */
 
