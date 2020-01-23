@@ -153,7 +153,7 @@
       <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
         <div id="inner-footer">
           <img src="<?php echo get_template_directory_uri(); ?>/library/images/footerlogo.png" alt="Flavorlab" />
-          <p>212.673.2773<br/><a class="mail-us" href="mailto:booking@flavorlab.com"><span data-title="licensing@flavorlab.com">Email Booking</span></a></p>
+          <p>212.673.2773<br/><a class="mail-us" href="mailto:booking@flavorlab.com"><span data-title="booking@flavorlab.com">booking@flavorlab.com</span></a></p>
         </div>
       </footer>
 
