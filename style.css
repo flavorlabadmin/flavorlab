@@ -55,6 +55,7 @@ a { outline: 0 !important; color: #00aeef;}
   .headerIcons { position: absolute; top:20px; right:15px; font-size: 18px; line-height: 20px; }
   .headerIcons a { text-decoration: none; color: #00B2F0; }
   .headerIcons a:hover{ opacity: .7; }
+  .headerIcons a.icon-email { display:none; } 
 
   /* Header nav icon */
   #nav-icon {width: 28px;height: 28px;float: left; margin: 13px 13px 13px 0; display: none; position: relative;-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .5s ease-in-out;-moz-transition: .5s ease-in-out;-o-transition: .5s ease-in-out;transition: .5s ease-in-out;cursor: pointer;}
@@ -97,7 +98,7 @@ a { outline: 0 !important; color: #00aeef;}
 
 #sidebar .main-nav {  }
 #sidebar .main-nav li {  }
-#sidebar .main-nav li a { padding: 5px 0; text-align: center;  }
+#sidebar .main-nav li a { padding: 10px 0; text-align: center; text-transform: uppercase;  }
 #sidebar .main-nav li a:hover { background: #efefef; }
 
 
@@ -141,7 +142,7 @@ a { outline: 0 !important; color: #00aeef;}
 
   	#nav-icon { display: block; }
 	/*#siteTag #headerLogo { display:none;}*/
-	.menu-main-menu-container, .menu-flavorlab-sound-main-menu-container, .menu-flavorlab-score-main-menu-container, .menu-producers-toolbox-main-menu-container { display:none;}
+	.menu-main-menu-container, .menu-flavorlab-sound-main-menu-container, .menu-flavorlab-score-main-menu-container, .menu-producers-toolbox-main-menu-container { display:block;}
 
 /**********************************************************************
   Homepages
@@ -831,6 +832,20 @@ display: block; }
 			margin: 0 auto;
 			text-align: left 
 	}
+	
+	.headerIcons {
+		top: 17px;
+		font-size: 24px;
+	}
+	
+	.headerIcons a {
+		display: none;
+		margin: 0 0 0 15px;
+	}
+	
+	.headerIcons a.icon-phone, .headerIcons a.icon-email {
+		display: inline-block;
+		}
 
 }
 
@@ -934,6 +949,10 @@ p {
 	
 	#testimonials-section {
 		padding: 0;
+	}
+	
+	#testimonials-section .quote-wrapper {
+		height: 462px;
 	}
 		
 		.laurel {
