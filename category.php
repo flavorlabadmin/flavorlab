@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 	<?php include('includes/HEADER-nav-menus.php'); ?>
-  <?php include_once('includes/SIDEBAR-FLHome.php'); ?>
+  <?php //include_once('includes/SIDEBAR-FLHome.php'); ?>
+  <?php if ( is_category('56') ) { include_once('includes/SIDEBAR-Score.php'); 
+      				} elseif ( is_category('86') ) { include_once('includes/SIDEBAR-Sound.php');
+      				} elseif ( is_category('87') ) { include_once('includes/SIDEBAR-PTB.php'); 
+      				} else { include_once('includes/SIDEBAR-FLHome.php'); }?>
 	<div id="content" class="blogCategory">
 		<div id="inner-content" class="wrap cf">
 			<div id="catContainer">
